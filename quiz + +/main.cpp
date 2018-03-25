@@ -14,7 +14,7 @@ int main()
 
 
 {
-
+    string nome;
 	int x,y,z,w,l,m,n,o,p,q,r,s,t,u;
 	cout<<"                     QUIZ IN C + +"<<endl;
 	cout <<"-----------------------------------------------"<<endl;
@@ -336,7 +336,7 @@ default:
  cin>>o;
  cout<<endl;
 
- switch(0){
+ switch(o){
 
 case(1):
     cout<<"SBAGLIATO"<<endl;
@@ -361,13 +361,49 @@ default:
  }
 
 
+ cout<<""<<endl;
+ cout<<"Qual'e' l'estensione del sorgente dei programmi scritti in QB64 ? "<<endl;
+ cout<<""<<endl;
+ cout<<"1) .CPP"<<endl;
+ cout<<endl;
+ cout<<"2) .BAS"<<endl;
+ cout<<endl;
+ cout<<"3) .BAT"<<endl;
+ cout<<endl;
+ cout<<"4) .QB64"<<endl;
+ cout<<""<<endl;
 
+ cin>>p;
+ cout<<endl;
 
+ switch(p)
+ {
+ case(1):
+    cout<<"SBAGLIATO"<<endl;
+    break;
 
+ case(2):
+    cout<<"ESATTO"<<endl;
+    break;
 
+ case(3):
+    cout<<"SBAGLIATO"<<endl;
+    break;
 
+ case(4):
+    cout<<"SBAGLIATO"<<endl;
+    break;
+
+ default:
+    cout<<"IL NUMERO INSERITO NON CORRISPONDE A NESSUNA RISPOSTA"<<endl;
+    break;
  }
 
+goto nome1;
+
+
+
+ } //Fine difficile
 
 
 
@@ -380,28 +416,47 @@ default:
 
 
 
+nome1:{ //Nome del giocatore
+
+cout<<endl;
+cout<<"Inserisci il tuo nome "<<endl;
+cout<<endl;
+cin>>nome;
 
 
 
-    if (x==2,y==1,z==5,w==3,l==1,m==3,n==2,o==4)
+}
+
+
+
+
+
+//CONDIZIONI DI VINCITA O SCONFITTA
+
+    if (x==2,y==1,z==5,w==3,l==1,m==3,n==2,o==4,p==2)
     {
        cout<<endl;
-       cout<<"Congratulazioni hai superato il quiz"<<endl;
+       cout<<"Congratulazioni "<<nome;
+       cout<<" hai superato il quiz"<<endl;
        cout<<endl;
     }
 
-    else if (x>=3,y>=2,z<=4,w>=4,l>=2,m<=2,n<=1,o<=3)
+    else if (x>=3,y>=2,z<=4,w>=4,l>=2,m<=2,n<=1,o<=3,p==1)
     {
     cout<<endl;
-    cout <<"Non hai superato il test riprova"<<endl;
+    cout <<"Non hai superato il test "<<nome;
+    cout<<endl;
+    cout<<"riprova"<<endl;
     cout<<endl;
 
     }
 
-    else if (x>=3,y>=2,z<=4,w<=2,l>=2,m>=4,n>=3,o<=3)
+    else if (x>=3,y>=2,z<=4,w<=2,l>=2,m>=4,n>=3,o<=3,p>=3)
     {
     cout<<endl;
-    cout <<"Non hai superato il test riprova"<<endl;
+    cout <<"Non hai superato il test "<<nome;
+    cout<<endl;
+    cout<<"riprova"<<endl;
     cout<<endl;
 
     }
